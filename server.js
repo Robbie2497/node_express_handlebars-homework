@@ -13,8 +13,8 @@ var expresshbrs = require("express-handlebars");
 
 app.engine("handlebars", expresshbrs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
-app.get("/weekday", function(req, res) {
-  res.render("index");
+app.get("/burgers", function(req, res) {
+  res.render("index", );
 });
 
 var routes = require("./controllers/burgersController.js");
